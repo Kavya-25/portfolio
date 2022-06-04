@@ -1,5 +1,5 @@
 AOS.init({
-    duration:1200,
+    duration:1300,
 });
 let menuIcon=document.getElementById("menu-icon")
 let navUl=document.getElementById("nav-ul")
