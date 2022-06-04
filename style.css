@@ -1,0 +1,464 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&family=Roboto:wght@300;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #111319;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+/* main home page section*/
+header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column; 
+}
+#nav-desktop{
+padding: 20px;
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+position: fixed;
+right: 0;
+}
+#nav-ul{
+  list-style-type: none;
+}
+#nav-ul li{
+  display: inline-block;
+  margin: 5px 0;
+}
+#nav-ul li a{
+  text-decoration: none;
+  color: orangered;
+  margin-right: 2rem;
+  font-size: 1.2rem;
+}
+#menu-icon{
+  font-size: 2rem;
+  color: orangered;
+  cursor: pointer;
+  display: none;  
+}
+#nav-mobile{
+  width: 5%;
+  padding: 5px 10px;
+  background: rgba( 165, 161, 161, 0.2 );
+  backdrop-filter: blur( 3.5px );
+  -webkit-backdrop-filter: blur( 3.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  text-align: center;
+  border-radius: 5px;
+  position: fixed;
+  right: 2%;
+  top: 10%;
+  display: none;
+  transform: translateX(180px);
+  z-index: 99;
+}
+#ul-mobile{
+  list-style-type: none;
+}
+#ul-mobile li{
+  margin: 0.5rem 0;
+}
+#ul-mobile li a{
+  font-size: 1.2rem;
+  margin: 5px 0;
+  color:orangered;
+}
+.intro {
+  font-size: 1.5rem;
+  margin: 7rem 2rem;
+  text-align: justify;
+}
+.intro .hi span {
+  font-size: 2.5rem;
+  color: orangered;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.intro button {
+  padding: 0.5rem 1rem;
+  background-color:transparent;
+  outline: none;
+  font-size: 1.3rem;
+  border:2px solid orangered;
+  border-radius: 5px;
+}
+.intro button:hover{
+  transform: scale(1.1);
+  transition: 0.5s;
+  border: 2px solid orangered;
+}
+.header-text {
+  font-size: 1rem;
+  color: rgba(126, 155, 185, 0.691);
+  width: 50%;
+  margin: 2rem 0;
+}
+.intro button a {
+  text-decoration: none;
+  color: white;
+}
+.social-icons {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 2%;
+  bottom: 5%;
+}
+.social-icons ul {
+  list-style: none;
+  font-size: 1.5rem;
+}
+.social-icons ul li:hover{
+  color: orangered;
+  transform: scale(1.2);
+  transition: 0.3s;
+}
+.social-icons ul li{
+  margin: 1rem 0;
+}
+.social-icons ul a{
+  text-decoration: none;
+  color: white;
+
+}
+.button-top{
+ color: orangered;
+ font-size: 1.5rem;
+ z-index: 1.5;
+  padding: 0.5rem;
+  position:fixed;
+  left: 2%;
+  bottom: 1%;
+}
+#about,
+#skills,
+#education,
+#portfolio,
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.heading {
+  font-size: 1.5rem;
+  margin: 2.5rem auto;
+  color: orangered;
+  text-transform: uppercase;
+padding: 1rem;
+border-bottom: 1px solid white;
+display: none;
+}
+
+.typing-demo {
+  width: 21ch;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid;
+  font-size: 1.5em;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+/* 
+about section
+ */
+.about-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.about-text {
+  width: 50%;
+  text-align: justify;
+  padding: 2rem;
+}
+.about-text button {
+  background-color:transparent;
+  border: 2px solid orangered;
+  outline: none;
+  padding: 0.5rem 1rem;
+  margin: 2rem 0;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+}
+.about-text button a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+}
+.img img {
+  /* height: 300px; */
+  width: 250px;
+}
+/*
+ skills section
+*/
+#skills{
+  height: fit-content;
+  padding: 2rem 0;
+}
+.skills-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width:80%;
+}
+.skills-bar{
+  width: 70%;
+  padding: 1rem;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+}
+.bar{
+  margin: 2rem 0;
+}
+.bar .info span{
+  font-size: 1.1rem;
+}
+.progress-line{
+  position: relative;
+  height: 10px;
+  width: 100%;
+  background-color: gray;
+  border-radius: 10px;
+}
+.progress-line span{
+  height: 100%;
+  width: 80%;
+  background-color: orangered;
+  position: absolute;
+  border-radius: 10px;
+}
+.progress-line span::before{
+  position: absolute;
+  content: "";
+  height: 0;
+  right: 0;
+  top: -10px;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0;
+  border-right-width: 0;
+  border-top-color: black;
+}
+.progress-line span::after{
+  position: absolute;
+  content: "80%";
+  right: 0;
+  top: -30px;
+}
+/* 
+education section css
+ */
+.education-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 100%;
+}
+.left-edu,.right-edu{
+  width: 20%;
+  margin:1rem 2rem;
+  text-align: center;
+  padding: 2rem;
+  height:70%;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #111319;
+}
+.edu-head{
+  font-size: 1.6rem;
+  padding: 0.2rem;
+  margin: 1rem;
+  border-bottom: 1px solid orangered;
+}
+.year{
+  background-color:rgba(102, 102, 190, 0.215);
+  padding:0.5rem;
+  border-radius: 5px;
+  font-size: 0.8rem;
+}
+.school{
+  padding: 1rem;
+}
+
+/* 
+portfolio section css
+ */
+ #portfolio{
+height: fit-content;
+ }
+ .portfolio-container{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   align-items: center;
+   width: 90%;
+ }
+ .project{
+   border: 1px solid gray;
+   width:100%;
+   height: 60vh;
+   margin: 1rem;
+ display: flex;
+ padding: 0.5rem;
+ justify-content: center;
+  align-items: center;
+ }
+ .project img{
+   width: 450px;
+ }
+ .details{
+   padding: 1rem;
+ }
+ .more{
+  background-color:transparent;
+  border: 2px solid orangered;
+  outline: none;
+  padding: 0.5rem 1rem;
+  margin: 2rem 0;
+  font-size: 1.3rem;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+ }
+
+/* 
+contact section css
+ */
+ .contact-container{
+display: flex;
+justify-content: space-around;
+align-items: center;
+width: 90%;
+ }
+ .contact-info,.form{
+   width: 50%;
+ }
+ .contact-info p{
+   font-size: 1.2rem;
+   color: rgb(176, 171, 171);
+   margin: 2rem;
+ }
+ .contact-info p i{
+   font-size: 2rem;
+ }
+ .form form{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+ }
+ form input{
+   border: none;
+   width: 50%;
+   padding: 0.5rem;
+   color: white;
+   text-align: center;
+   background: transparent;
+   outline: none;
+   border-bottom: 1px solid #808080;
+   margin:0.5rem;
+   font-size: 1.2rem;
+ }
+ form textarea{
+  resize: none;
+  padding: 0.3rem;
+   background-color: transparent;
+   color: #808080;
+   border-bottom: 1px solid #808080;
+   outline: none;
+   margin: 0.5rem;
+ }
+ #contact button{
+  background-color: orangered;
+  border: none;
+  outline: none;
+  padding: 0.5rem 2rem;
+  margin: 2rem 0;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.2rem;
+ }
+ #contact h6{
+   margin-bottom: 0.5rem;
+ }
+/* all sections css */
+section {
+  height: 100vh;
+
+}
+section:nth-child(even) {
+  background-color: #191c26;
+}
+
+
+/* media queries */
+@media screen and (max-width: 768px) {
+  #menu-icon{
+    display: block;
+}
+#nav-ul{
+    display: none;
+}
+#nav-mobile.show{
+    display: block;
+    transform: translateX(0);
+    transition: 0.5s ease-in-out;
+
+}.typing-demo{
+      display: none;
+    }
+    .heading{
+      display: block;
+    }
+  #about {
+    height: fit-content;
+  }
+  .about-container {
+    flex-direction: column;
+  }
+  .contact-container{
+    flex-direction: column;
+  }
+  .contact-info p{
+    font-size: 0.8rem;
+    color: rgb(176, 171, 171);
+    margin: 2rem 0;
+  }
+  .contact-info p i{
+    font-size: 1.2rem;
+  }
+  .social-icons{
+    display: none;
+  }
+  .education-container{
+    flex-direction: column;
+  }
+  .left-edu,.right-edu{
+width: 80%;
+  }
+}
