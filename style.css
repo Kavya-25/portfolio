@@ -8,6 +8,20 @@ body {
   color: white;
   font-family: "Poppins", sans-serif;
 }
+::-webkit-scrollbar {
+  width: 5px;
+  
+}
+::-webkit-scrollbar-track {
+  background: #090b11;
+}
+::-webkit-scrollbar-thumb {
+  background:#3e4354;
+  ;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 /* main home page section*/
 header {
   height: 100vh;
@@ -364,11 +378,11 @@ height: fit-content;
    width: 90%;
  }
  .project{
-   width:100%;
-   height: 60vh;
+   width:40%;
+   height: 80vh;
    margin: 1rem;
  display: flex;
- padding: 0.5rem;
+ /* padding: 0.5rem; */
  justify-content: center;
   align-items: center;
   background: rgba( 66, 66, 94, 0.25 );
@@ -376,22 +390,150 @@ backdrop-filter: blur( 4px );
 -webkit-backdrop-filter: blur( 4px );
 border-radius: 10px;
  }
- .project img{
-   width: 450px;
- }
- .details{
-   padding: 1rem;
- }
- .more{
+ 
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+.btn {
+  background-color:orangered;
+  /* border: 1px solid #cccccc; */
+  outline: none;
+  border: none;
+  color: #fff;
+  padding: 0.5rem;
+  font-size: 1.1rem;
+}
+.btn--block {
+  display: block;
+  /* width: 100%; */
+}
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+.cards__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem;
+}
+@media (min-width: 40rem) {
+  .cards__item {
+    width: 50%;
+  }
+}
+@media (min-width: 56rem) {
+  .cards__item {
+    width: 33.3333%;
+  }
+}
+.card {
+  background: rgba(97, 96, 109, 0.25);
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+}
+.card:hover .card__image {
+  -webkit-filter: contrast(100%);
+          filter: contrast(100%);
+}
+.card__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+}
+.card__image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  -webkit-filter: contrast(70%);
+          filter: contrast(70%);
+  overflow: hidden;
+  position: relative;
+  -webkit-transition: -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+  transition: -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+  transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+  transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91), -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+}
+.card__image::before {
+  content: "";
+  display: block;
+  padding-top: 56.25%;
+}
+.card__image--portfolio{
+  background-image: url(./images/portfolio_img.png);
+}
+.card__image--river {
+  background-image: url(https://unsplash.it/800/600?image=11);
+}
+.card__image--freshmen {
+  background-image: url(./images/freshmen_img.png);
+}
+.card__image--nimbus {
+  background-image: url(./images/nimbus_img.png);
+}
+.card__image--music{
+  background-image: url(./images/musicplayer_img.png);
+}
+.card__image--todo{
+  background-image: url(./images/todolist_img.png);
+}
+
+.card__title {
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.card__text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+}
+ .more {
   background-color:transparent;
   border: 2px solid orangered;
   outline: none;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 3rem;
   margin: 2rem 0;
   font-size: 1.3rem;
   border-radius: 5px;
   cursor: pointer;
-  color: white;
+ }
+ .more a{
+   color: white;
+   text-decoration: none;
  }
 
 /* 
