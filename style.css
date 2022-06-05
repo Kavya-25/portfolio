@@ -27,6 +27,7 @@ header {
   height: 100vh;
   display: flex;
   flex-direction: column; 
+ 
 }
 #nav-desktop{
 padding: 20px;
@@ -398,11 +399,14 @@ img {
 }
 .btn {
   background-color:orangered;
-  /* border: 1px solid #cccccc; */
   outline: none;
   border: none;
-  color: #fff;
   padding: 0.5rem;
+  cursor: pointer;
+}
+.btn a{
+  color: white;
+  text-decoration: none;
   font-size: 1.1rem;
 }
 .btn--block {
@@ -583,19 +587,28 @@ width: 90%;
    outline: none;
    margin: 0.5rem;
  }
- #contact button{
+ #contact button {
   background-color: orangered;
   border: none;
   outline: none;
   padding: 0.5rem 2rem;
   margin: 2rem 0;
   border-radius: 5px;
-  color: white;
-  font-size: 1.2rem;
+  
  }
+ #contact button a{
+   color: white;
+   text-decoration: none;
+   font-size: 1.2rem;
+ }
+
  #contact h6{
    margin-bottom: 0.5rem;
   
+ }
+ .location,.mail{
+   color: orangered;
+   transform: scale(0.7);
  }
 /* all sections css */
 section {
