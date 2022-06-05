@@ -468,9 +468,13 @@ border-radius: 10px;
           flex-direction: column;
   overflow: hidden;
 }
-.card:hover .card__image {
-  -webkit-filter: contrast(100%);
-          filter: contrast(100%);
+.card:hover{
+  transform: translateY(-10px);
+  transition: 0.5s ease-in-out;
+}
+.card:hover .card__image{
+  transform: scale(1.1) rotate(1deg);
+  transition: 0.5s ease-in-out;
 }
 .card__content {
   display: -webkit-box;
@@ -491,8 +495,6 @@ border-radius: 10px;
   background-size: cover;
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
-  -webkit-filter: contrast(70%);
-          filter: contrast(70%);
   overflow: hidden;
   position: relative;
   -webkit-transition: -webkit-filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
@@ -508,8 +510,8 @@ border-radius: 10px;
 .card__image--portfolio{
   background-image: url(./images/portfolio_img.png);
 }
-.card__image--river {
-  background-image: url(https://unsplash.it/800/600?image=11);
+.card__image--hillffair{
+  background-image: url(./images/hillffair_img.png);
 }
 .card__image--freshmen {
   background-image: url(./images/freshmen_img.png);
