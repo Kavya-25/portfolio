@@ -669,6 +669,13 @@ section:nth-child(even) {
       background-color: transparent;
       right: 5%;
     }
+    .intro button {
+      padding: 0.2rem 0.7rem;
+      font-size: 1.1rem;
+    }
+    .intro button {
+      padding: 0.2rem 2rem;
+    }
   #about {
     height: fit-content;
   }
