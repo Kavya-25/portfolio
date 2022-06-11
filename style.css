@@ -176,6 +176,7 @@ backdrop-filter: blur( 4px );
   position:fixed;
   left: 2%;
   bottom: 1%;
+  z-index: 60;
 }
 #about,
 #skills,
@@ -660,6 +661,12 @@ section:nth-child(even) {
 }.typing-demo{
       display: none;
     }
+    .header-text{
+      width: 50%;
+    }
+    #education{
+      height: fit-content;
+    }
     .heading{
       display: block;
     }
@@ -667,7 +674,11 @@ section:nth-child(even) {
       height: auto;
       width: auto;
       background-color: transparent;
-      right: 5%;
+      right: 10%;
+    }
+    .cutout img{
+     
+  transform: scale(0.6);
     }
     .intro button {
       padding: 0.2rem 0.7rem;
@@ -701,5 +712,13 @@ section:nth-child(even) {
   }
   .left-edu,.right-edu{
 width: 80%;
+  }
+}
+@media screen and (max-width:450px)  {
+  .header-text{
+    width: 100%;
+  }
+  .cutout{
+    display: none;
   }
 }
