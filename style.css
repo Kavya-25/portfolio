@@ -60,7 +60,8 @@ backdrop-filter: blur( 4px );
   text-decoration: none;
   color: orangered;
   margin-right: 2rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  padding-bottom: 10px;
 }
 #nav-ul li a:hover{
   border-bottom: 1px solid orangered;
