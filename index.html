@@ -8,16 +8,17 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://kit.fontawesome.com/2c7db33b0e.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://res.cloudinary.com/veseylab/raw/upload/v1636192990/magicmouse/magic_mouse-1.2.1.cdn.min.js"></script>
     <link rel="icon" type="image" href="./images/favicon.ico">
     <title>Kavya | Portfolio</title>
 </head>
 <body>
-    <header>
+    <header id="header">
         <nav id="nav-desktop">
             <div class="logo">Kavya</div>
             <div id="menu-icon"><i class="fa-solid fa-bars"></i></div>
             <ul id="nav-ul">
-                <li><a href="#">Home</a></li>
+                <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#education">Education&Work</a></li>
@@ -54,7 +55,7 @@
                <a href="https://www.linkedin.com/in/kavya-58a584208/" target="_blank"><li><i class="fa-brands fa-linkedin"></i></i></li></a>
            </ul>
        </div>
-       <a href="#" class="button-top"><i class="fa-solid fa-angles-up"></i></a>
+       <a href="#header" class="button-top"><i class="fa-solid fa-angles-up"></i></a>
     </header>
     <section id="about">
         <div class="heading" data-aos="fade-down">About</div>
@@ -173,7 +174,7 @@
       </div>
     </li>
     <li class="cards__item">
-      <div class="card" data-aos="fade-up">
+      <div class="card" data-aos="fade-up" data-tilt>
         <div class="card__image card__image--portfolio"></div>
         <div class="card__content">
           <div class="card__title">My Portfolio</div>
@@ -195,7 +196,7 @@
         </div>
       </li>
       <li class="cards__item">
-        <div class="card" data-aos="fade-up">
+        <div class="card" data-aos="fade-up" data-tilt>
           <div class="card__image card__image--todo"></div>
           <div class="card__content">
             <div class="card__title">To-do list</div>
@@ -230,7 +231,19 @@
     </section>
 
 
+
     <script src="./script.js"></script>
+    <script type="text/javascript">
+        options = {
+        "cursorOuter": "circle-basic",
+        "hoverEffect": "pointer-overlay",
+        "hoverItemMove": false,
+        "defaultCursor": false,
+        "outerWidth": 30,
+        "outerHeight": 30
+          };
+        magicMouse(options);
+    </script>
 
 </body>
 </html>

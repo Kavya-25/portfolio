@@ -6,8 +6,14 @@ let navUl=document.getElementById("nav-ul")
 let navMobile=document.getElementById("nav-mobile")
 
 menuIcon.addEventListener("click",function(){
-console.log("button clicked")
 navMobile.classList.toggle("show")
 })
 
-
+document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
+    anchor.addEventListener('click',function(e){
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior:"smooth"
+        });
+    });
+});
