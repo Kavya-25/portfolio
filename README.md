@@ -1,6 +1,6 @@
 # My personal Portfolio Website
 A website portraying my projects <br/>
-The site is deployed on Netlify,link has been provided [here](https://kavyaportfolio25.netlify.app/)<br/>
+The site is deployed on Netlify, link has been provided [here](https://kavyaportfolio25.netlify.app/)<br/>
 Designed from using HTML,CSS & JS
 
 # Library Used
