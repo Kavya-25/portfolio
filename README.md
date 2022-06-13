@@ -1,6 +1,7 @@
 # My personal Portfolio Website
-The site is hosted on Github Pages whose link has been provided [here](https://kavya-25.github.io/portfolio/)
-It was designed from scratch using HTML,CSS & JS
+A website portraying my projects <br/>
+The site is hosted on Github Pages whose link has been provided [here](https://kavya-25.github.io/portfolio/)<br/>
+Designed from using HTML,CSS & JS
 
 # Library Used
 1.Aos.js
