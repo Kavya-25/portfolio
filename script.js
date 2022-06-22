@@ -5,6 +5,7 @@ let menuIcon=document.getElementById("menu-icon")
 let navUl=document.getElementById("nav-ul")
 let navMobile=document.getElementById("nav-mobile")
 
+
 menuIcon.addEventListener("click",function(){
 navMobile.classList.toggle("show")
 })
@@ -17,3 +18,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
         });
     });
 });
+let preloader=document.getElementById("preloader");
+function myfunction(){
+    preloader.style.display="none"
+}
