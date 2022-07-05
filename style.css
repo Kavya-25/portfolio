@@ -401,7 +401,7 @@ border-radius: 10px;
 }.progress-line.github span::after{
   content: "70%";
 }.progress-line.cpp span::after{
-  content: "70%";
+  content: "50%";
 }
 .progress-line.html span{
   width: 90%;
@@ -417,7 +417,7 @@ border-radius: 10px;
 }.progress-line.github span{
   width: 70%;
 }.progress-line.cpp span{
-  width: 70%;
+  width: 50%;
 }
 
 /* education section css*/
@@ -439,7 +439,7 @@ border-radius: 10px;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  background-color: #111319;
+  background-color: #191c26;
 }
 .edu-head{
   font-size: 1.6rem;
@@ -589,8 +589,8 @@ border-radius: 10px;
 .card__image--portfolio{
   background-image: url(./images/portfolio_img.png);
 }
-.card__image--hillffair{
-  background-image: url(./images/hillffair_img.png);
+.card__image--instaclone{
+  background-image: url(./images/instaclone_img.png);
 }
 .card__image--freshmen {
   background-image: url(./images/freshmen_img.png);
@@ -600,6 +600,12 @@ border-radius: 10px;
 }
 .card__image--music{
   background-image: url(./images/musicplayer_img.png);
+}
+.card__image--weather{
+  background-image: url(./images/weather_img.png);
+}
+.card__image--magicnotes{
+  background-image: url(./images/magicnotes_img.png);
 }
 .card__image--todo{
   background-image: url(./images/todolist_img.png);
