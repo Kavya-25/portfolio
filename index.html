@@ -18,7 +18,7 @@
       </div>
     <header id="header">
         <nav id="nav-desktop">
-            <div class="logo">Kavya</div>
+            <!-- <div class="logo">Kavya</div> -->
             <div id="menu-icon"><i class="fa-solid fa-bars"></i></div>
             <ul id="nav-ul">
                 <li><a href="#header">Home</a></li>
@@ -44,37 +44,41 @@
                 <div class="typing-demo">
                Student & Web Developer
             </div>
-           <div class="header-text">This is my portfolio website portraying about myself, the skills I possess, my education and the projects I have made. I am currently learning React.js and looking forward on making more and more projects </div>
+           <div class="header-text">This website serves as my online resume and showcases my qualifications, experience, education, and projects. I am now learning React.js and eager to create a growing number of projects. </div>
            <button><a href="#portfolio">See Portfolio&nbsp;&nbsp;<i class="fa-solid fa-arrow-right"></i></a></button>
+           <div class="social-icons">
+            <ul>
+                <a href="https://www.instagram.com/i_kavya_2501/" target="_blank"><li><i class="fa-brands fa-instagram" ></i></li></a>
+                <a href="https://github.com/Kavya-25" target="_blank"><li><i class="fa-brands fa-github"></i></li></a>
+                <a href="https://www.linkedin.com/in/kavya-58a584208/" target="_blank"><li><i class="fa-brands fa-linkedin"></i></i></li></a>
+            </ul>
+        </div>
         </div>
         <div class="cutout">
             <img src="./images/cutout2.png" alt="">
         </div>
        </div>
-       <div class="social-icons">
-           <ul>
-               <a href="https://www.instagram.com/i_kavya_2501/" target="_blank"><li><i class="fa-brands fa-instagram" ></i></li></a>
-               <a href="https://github.com/Kavya-25" target="_blank"><li><i class="fa-brands fa-github"></i></li></a>
-               <a href="https://www.linkedin.com/in/kavya-58a584208/" target="_blank"><li><i class="fa-brands fa-linkedin"></i></i></li></a>
-           </ul>
-       </div>
+       
        <a href="#header" class="button-top"><i class="fa-solid fa-angles-up"></i></a>
     </header>
     <section id="about">
+      <p class="educationwatermark">About</p>
         <div class="heading" data-aos="fade-down">About</div>
         <div class="about-container">
             <div class="img" data-aos="fade-right">
-                <img src="./images/kavyapic.jpg" alt="" data-tilt>
+                <img src="./images/kavyaformals.jpeg" alt="" data-tilt>
             </div>
             <div class="about-text" data-aos="fade-up">
-                I'm an undergraduate in Mathematics and Scientific Computing Engineering from National Institute of Technology, Hamirpur,Himachal Pradesh with current grade point of 9.20. <br>
-                I am also an Executive member of Team Pixonoids, which is the leading Club for Web Development in our College. <br>
+              I'm a third-year student at National Institute of Technology in Hamirpur, Himachal Pradesh, where I'm pursuing a degree in mathematics and scientific computing engineering. My current GPA is 9.20. <br>
+              I also serve as Team Pixonoids' coordinator and lead web developer. Team Pixonoids is the college's top club for web development and photography.
+              I work as a front-end developer who prioritises producing clear and efficient code.<br>
                 <button><a href="./docs/CV - KAVYA.pdf" download><i class="fa-solid fa-download"></i>&nbsp;&nbsp;Download CV</a></button>
             </div>
         </div>
         </div>
     </section>
     <section id="skills">
+      <p class="educationwatermark">Skills</p>
         <div class="heading">Skills</div>
         <div class="skills-container">
             <div class="skills-bar" data-aos="fade-right">
@@ -123,6 +127,7 @@
         </div>
     </section>
     <section id="education">
+      <p class="educationwatermark">Education</p>
         <div class="heading">Education</div>
         <div class="education-container">
             <div class="left-edu" data-aos="fade-right" >
@@ -134,15 +139,29 @@
             </div>
             <div class="right-edu" data-aos="fade-right">
                 <div class="edu-head">Work</div>
-                <div class="year">2020-Present</div>
-                <div class="school">Web Developer,Team Pixonoids,NIT Hamirpur</div>
+                <div class="year">2021-2022</div>
+                <div class="school">Web Developer,Executive Member,Team Pixonoids,NIT Hamirpur</div>
+                <div class="year">2022-Present</div>
+                <div class="school">Coordinator,Team Pixonoids,NIT Hamirpur</div>
             </div>
         </div>
     </section>
     <section id="portfolio">
+      <p class="portfoliowatermark">Portfolio</p>
         <div class="heading">Portfolio</div>
         <div class="portfolio-container">
 <ul class="cards">
+    <li class="cards__item">
+      <div class="card" data-aos="fade-up">
+        <div class="card__image card__image--hillffair"></div>
+        <div class="card__content">
+          <div class="card__title">Hill'ffair 2022</div>
+          <p class="card__text">Designed and developed alongwith my team for the cultural annual fest of my College, H.The website is developed keeping in mind the theme (Mirage: Oasis of Mystique).The website remains in light mode throughout the day and automatically switches to dark after 7pm </p>
+          <p>Made in : React.js Three.js SCSS </p><br>
+          <button class="btn btn--block card__btn"><a href="https://www.hillffairnith.com/" target="_blank"> View</a></button>
+        </div>
+      </div>
+    </li>
     <li class="cards__item">
       <div class="card" data-aos="fade-up">
         <div class="card__image card__image--nimbus"></div>
@@ -258,7 +277,7 @@
 
 
     <script src="./script.js"></script>
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         options = {
         "cursorOuter": "circle-basic",
         "hoverEffect": "pointer-overlay",
@@ -269,7 +288,7 @@
           };
         magicMouse(options);
 
-    </script>
+    </script> -->
 
 </body>
 </html>

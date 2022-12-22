@@ -4,7 +4,7 @@
   padding: 0;
 }
 body {
-  background-color: #111319;
+  background-color: #000;
   color: white;
   font-family: "Poppins", sans-serif;
 }
@@ -21,9 +21,6 @@ body {
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
-}
-body {
-  background-color: #111319;
 }
 #preloader {
     position: fixed;
@@ -105,26 +102,35 @@ header {
   height: 100vh;
   display: flex;
   flex-direction: column; 
+  position:relative;
+  background-image: url(/images/svg/WorldMap.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  
  
 }
 #nav-desktop{
+  position: absolute;
 padding: 20px;
 display: flex;
 justify-content: space-between;
-flex-wrap: wrap;
+/* flex-wrap: wrap; */
 position: fixed;
-width: 100%;
+height: 100%;
 z-index: 99;
-background: rgba( 62, 62, 95, 0.25 );
+/* background: rgba( 62, 62, 95, 0.25 );
 backdrop-filter: blur( 4px );
--webkit-backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px ); */
+transform: rotate(90deg);
+right: 0%;
+
 
 }
 .logo{
   font-size: 1.3rem;
   font-weight: 900;
   text-transform: uppercase;
-  color: orangered;
+  color: #f9004d;
   margin-top: 5px;
 }
 #nav-ul,#ul-mobile{
@@ -134,19 +140,27 @@ backdrop-filter: blur( 4px );
   display: inline-block;
   margin: 5px 0;
 }
+#nav-ul li:hover{
+  transform: scale(1.1);
+  transition:0.3s;
+}
 #nav-ul li a{
   text-decoration: none;
-  color: orangered;
+  color: #f9004d;
   margin-right: 2rem;
-  font-size: 1rem;
+  font-size: 1.3rem;
   padding-bottom: 10px;
 }
 #nav-ul li a:hover{
-  border-bottom: 1px solid orangered;
+  border-bottom: 1px solid #f9004d;
+ 
+}
+#nav-ul li a:active .active{
+  color: white;
 }
 #menu-icon{
   font-size: 2rem;
-  color: orangered;
+  color: #f9004d;
   cursor: pointer;
   display: none;  
 }
@@ -173,7 +187,7 @@ backdrop-filter: blur( 4px );
 #ul-mobile li a{
   font-size: 1.2rem;
   margin: 5px 0;
-  color:orangered;
+  color:#f9004d;
 }
 .intro {
   font-size: 1.5rem;
@@ -182,7 +196,7 @@ backdrop-filter: blur( 4px );
 }
 .intro .hi span {
   font-size: 2.5rem;
-  color: orangered;
+  color: #f9004d;
   font-weight: 900;
   text-transform: uppercase;
 }
@@ -191,13 +205,13 @@ backdrop-filter: blur( 4px );
   background-color:transparent;
   outline: none;
   font-size: 1.3rem;
-  border:2px solid orangered;
+  border:2px solid #f9004d;
   border-radius: 5px;
 }
 .intro button:hover{
   transform: scale(1.1);
   transition: 0.5s;
-  border: 2px solid orangered;
+  border: 2px solid #f9004d;
 }
 .cutout{
  width: 500px;
@@ -207,13 +221,14 @@ backdrop-filter: blur( 4px );
  position: absolute;
  right: 10%;
  top: 15%;
- background-color: orangered;
+ background-color: #f9004d;
  border-radius: 50%;
 }
 .cutout img{
   width: 200px;
 }
 .header-text {
+  /* position: absolute; */
   font-size: 1rem;
   color: rgba(126, 155, 185, 0.691);
   width: 30%;
@@ -225,22 +240,23 @@ backdrop-filter: blur( 4px );
 }
 .social-icons {
   display: flex;
-  flex-direction: column;
-  position: fixed;
-  right: 2%;
-  bottom: 5%;
+  flex-direction: row;
+  z-index: 9;
+  /* display: none; */
 }
 .social-icons ul {
   list-style: none;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  display: flex;
+  
 }
-.social-icons ul li:hover{
-  color: orangered;
-  transform: scale(1.2);
-  transition: 0.3s;
+.social-icons ul li :hover{
+  color: #f9004d;
+  transform: scale(1.3);
+  transition: 0.1s;
 }
 .social-icons ul li{
-  margin: 1rem 0;
+  margin:2rem 2rem 2rem 0;
 }
 .social-icons ul a{
   text-decoration: none;
@@ -248,7 +264,7 @@ backdrop-filter: blur( 4px );
 
 }
 .button-top{
- color: orangered;
+ color: #f9004d;
  font-size: 1.5rem;
  z-index: 1.5;
   padding: 0.5rem;
@@ -266,11 +282,12 @@ backdrop-filter: blur( 4px );
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 .heading {
   font-size: 1.5rem;
   margin: 2.5rem auto;
-  color: orangered;
+  color: #f9004d;
   text-transform: uppercase;
 padding: 1rem;
 border-bottom: 1px solid white;
@@ -299,17 +316,18 @@ display: none;
 /* about section*/
 .about-container {
   display: flex;
+  height:inherit;
   justify-content: space-around;
   align-items: center;
 }
 .about-text {
   width: 50%;
   text-align: justify;
-  padding: 2rem;
+  padding: 1rem;
 }
 .about-text button {
   background-color:transparent;
-  border: 2px solid orangered;
+  border: 2px solid #f9004d;
   outline: none;
   padding: 0.5rem 1rem;
   margin: 2rem 0;
@@ -322,8 +340,14 @@ display: none;
   color: white;
   font-size: 1.2rem;
 }
+.img {
+  padding: 0 0 30px 30px;
+}
+
 .img img {
-  width: 250px;
+  display: inline-block;
+  width: 350px;
+  box-shadow: -30px 30px 0 #f9004d;
 }
 /*skills section*/
 #skills{
@@ -361,7 +385,7 @@ border-radius: 10px;
 }
 .progress-line span{
   height: 100%;
-  background-color: orangered;
+  background-color: #f9004d;
   position: absolute;
   border-radius: 10px;
 }
@@ -425,7 +449,7 @@ border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 90%;
+  width: 80%;
   height: 100%;
 }
 .left-edu,.right-edu{
@@ -439,13 +463,27 @@ border-radius: 10px;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  background-color: #191c26;
+  background-color: #0c0c18;
+}
+.portfoliowatermark,.educationwatermark{
+  position:absolute;
+  left:0;
+  padding: 0;
+  top:0;
+  font-size: 8rem;
+  letter-spacing: 2px;
+  opacity: 0.1;
+  z-index: 8;
+  /* transform: rotate(270deg); */
+}
+.educationwatermark{
+  /* top:-10%; */
 }
 .edu-head{
   font-size: 1.6rem;
   padding: 0.2rem;
   margin: 1rem;
-  border-bottom: 1px solid orangered;
+  border-bottom: 1px solid #f9004d;
 }
 .year{
   background-color:rgba(102, 102, 190, 0.215);
@@ -491,7 +529,7 @@ img {
   vertical-align: middle;
 }
 .btn {
-  background-color:orangered;
+  background-color:#f9004d;
   outline: none;
   border: none;
   padding: 0.5rem;
@@ -516,6 +554,7 @@ img {
   margin: 0;
   padding: 0;
   justify-content: center;
+  
 }
 .cards__item {
   display: -webkit-box;
@@ -530,7 +569,7 @@ img {
 }
 @media (min-width: 56rem) {
   .cards__item {
-    width: 33.3333%;
+    width: 33.333%;
   }
 }
 .card {
@@ -546,6 +585,7 @@ border-radius: 10px;
       -ms-flex-direction: column;
           flex-direction: column;
   overflow: hidden;
+  
 }
 .card:hover{
   transform: translateY(-10px);
@@ -598,6 +638,9 @@ border-radius: 10px;
 .card__image--nimbus {
   background-image: url(./images/nimbus_img.png);
 }
+.card__image--hillffair{
+  background-image: url(./images/hillffair22_img.png);
+}
 .card__image--music{
   background-image: url(./images/musicplayer_img.png);
 }
@@ -628,7 +671,7 @@ border-radius: 10px;
 }
  .more {
   background-color:transparent;
-  border: 2px solid orangered;
+  border: 2px solid #f9004d;
   outline: none;
   padding: 0.5rem 3rem;
   margin: 2rem 0;
@@ -672,7 +715,7 @@ margin: 1rem 0;
   margin: 1rem 0;
 }
 .contact span{
-  color: orangered;
+  color: #f9004d;
   font-size: 1.2rem;
 }
 #contact p{
@@ -686,7 +729,7 @@ section {
   padding-top: 40px;
 
 }
-section:nth-child(even) {
+section:nth-child(odd) {
   background-color: #191c26;
 }
 
@@ -699,8 +742,13 @@ section:nth-child(even) {
     right: 15%;
 
 }
+
+.portfoliowatermark,.educationwatermark{
+  display: none;
+}
 #nav-desktop{
   background:none;
+  transform: rotate(0);
 }
 .logo{display: none;}
 #nav-ul{
@@ -719,6 +767,7 @@ section:nth-child(even) {
     }
     #education{
       height: fit-content;
+      position: relative;
     }
     .heading{
       display: block;
@@ -743,14 +792,15 @@ section:nth-child(even) {
   #about {
     height: fit-content;
   }
+  .watermark{
+    font-size: 10rem;
+    position: absolute;
+  }
   .about-container {
     flex-direction: column;
   }
   .contact-container{
     flex-direction: column;
-  }
-  .social-icons{
-    display: none;
   }
   .education-container{
     flex-direction: column;
@@ -762,9 +812,19 @@ width: 80%;
 @media screen and (max-width:450px)  {
   .header-text{
     width: 100%;
+    bottom: 2%;
   }
   .cutout{
-    display: none;
+   top: 0%;
+   left: 0;
+   opacity: 0.4;
+    
+  }
+  .social-icons{
+    margin-top: -2.5rem;
+  }
+  .social-icons ul li{
+    font-size: 1.5rem;
   }
   .about-text {
     width: 90%;
