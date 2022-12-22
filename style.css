@@ -29,7 +29,7 @@ body {
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  background-color: #111319;
+  background-color: #000;
   z-index: 999;
 }
 #loader {
@@ -42,7 +42,7 @@ body {
   margin: -75px 0 0 -75px;
   border-radius: 50%;
   border: 3px solid transparent;
-  border-top-color: #ff4500;
+  border-top-color: #f9004f;
   -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
 }
@@ -214,8 +214,9 @@ header {
   position: absolute;
   right: 10%;
   top: 15%;
-  background-color: #f9004d;
+  background-color: #f9004f9a;
   border-radius: 50%;
+  /* box-shadow: 50px 0px 0 rgba(255, 255, 255, 0.749); */
 }
 .cutout img {
   width: 200px;
