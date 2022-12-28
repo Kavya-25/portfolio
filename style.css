@@ -8,6 +8,10 @@ body {
   background-color: #000;
   color: white;
   font-family: 'Poppins', sans-serif;
+  background-image: url(/images/svg/WorldMap.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 
 }
 ::-webkit-scrollbar {
@@ -103,9 +107,7 @@ header {
   display: flex;
   flex-direction: column;
   position: relative;
-  background-image: url(/images/svg/WorldMap.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
+ 
 }
 #nav-desktop {
   padding: 20px;
@@ -115,6 +117,7 @@ header {
   height: inherit;
   transform: rotate(90deg);
   right: 0%;
+  z-index: 10;
 }
 .logo {
   font-size: 1.3rem;
@@ -145,14 +148,15 @@ header {
 
 }
 #nav-ul li a:hover {
-  border-bottom: 1px solid #f9004d;
+  border-bottom: 1px solid #fff;
+  color: #fff;
 }
 #nav-ul li a:active .active {
   color: white;
 }
 #menu-icon {
   font-size: 2rem;
-  color: #f9004d;
+  color: #f9004f;
   cursor: pointer;
   display: none;
 }
@@ -187,7 +191,7 @@ header {
   text-align: justify;
 }
 .intro .hi span {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   color: #f9004d;
   font-weight: 900;
   text-transform: uppercase;
@@ -216,6 +220,18 @@ header {
   top: 15%;
   background-color: #f9004f9a;
   border-radius: 50%;
+}
+@keyframes jump {
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-10px);
+  }
+
+  100%{
+    transform: translateY(0);
+  }
 }
 .cutout img {
   width: 200px;
@@ -313,6 +329,7 @@ header {
   width: 50%;
   text-align: justify;
   padding: 1rem;
+  font-size: 1.4rem;
 }
 .about-text button {
   background-color: transparent;
@@ -405,6 +422,7 @@ header {
   justify-content: flex-start;
   background-color: #000;
   box-shadow: -30px 30px 0 #f9004f;
+  font-size: 1.2rem;
 }
 .portfoliowatermark,
 .educationwatermark {
@@ -413,9 +431,12 @@ header {
   padding: 0;
   top: 0;
   font-size: 8rem;
-  letter-spacing: 2px;
-  opacity: 0.1;
-  z-index: 8;
+  text-transform: uppercase;
+  color: #fff;
+  z-index: 13;
+-webkit-text-fill-color: transparent;
+-webkit-text-stroke-width:1px ;
+animation: jump 2s ease-in-out infinite;
 }
 
 .edu-head {
@@ -493,6 +514,7 @@ img {
   margin: 0;
   padding: 0;
   justify-content: center;
+  z-index: 12;
 }
 .cards__item {
   display: -webkit-box;
@@ -666,8 +688,9 @@ section {
   padding-top: 40px;
 }
 section:nth-child(odd) {
-  background-color: #191c26;
-   z-index: -1; 
+  /* background-color: #191c269a; */
+  /* background-blur:16px; */
+   /* z-index: -1;  */
 } 
 
 .about-text button a{
