@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "My portfolio website",
+  "description": "A website portraying my projects <br/>\r The site is deployed on Netlify, link has been provided [here](https://kavyaportfolio25.netlify.app/)<br/>\r Designed from using HTML,CSS & JS.This website serves as my online resume and showcases my qualifications, experience, education, and projects.",
   "main": "script.js",
   "directories": {
     "doc": "docs"
