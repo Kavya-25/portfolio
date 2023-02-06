@@ -299,24 +299,24 @@ header {
   display: none;
 }
 
-.typing-demo {
-  width: 21ch;
-  animation: typing 2s steps(22), blink infinite;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 2px solid;
+.shine{
+  position: relative;
   font-size: 1.5em;
+  overflow: hidden;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 8s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
 }
 
-@keyframes typing {
-  from {
-    width: 0;
+@keyframes animate {
+  0% {
+    background-position: -400%;
   }
-}
-@keyframes blink {
-  
-  50% {
-    border-color: transparent;
+  100% {
+    background-position: 400%;
   }
 }
 /* about section*/
