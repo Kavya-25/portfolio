@@ -107,6 +107,8 @@ header {
   display: flex;
   flex-direction: column;
   position: relative;
+  justify-content: center;
+  align-items: center;
  
 }
 #nav-desktop {
@@ -159,6 +161,7 @@ header {
   color: #f9004f;
   cursor: pointer;
   display: none;
+  margin-right: 0.4rem;
 }
 #nav-mobile {
   width: 5%;
@@ -171,8 +174,8 @@ header {
   text-align: center;
   border-radius: 5px;
   position: fixed;
-  right: 2%;
-  top: 10%;
+  right: 4%;
+  top: 13%;
   display: none;
   transform: translateX(100px);
   z-index: 99;
@@ -186,40 +189,28 @@ header {
   color: #f9004d;
 }
 .intro {
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin: 7rem 2rem;
-  text-align: justify;
+  /* text-align: justify; */
 }
 .intro .hi span {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   color: #f9004d;
   font-weight: 900;
   text-transform: uppercase;
 }
 .intro button {
-  padding: 0.5rem 1rem;
+  padding: 0.7rem 2rem;
   background-color: transparent;
   outline: none;
   font-size: 1.3rem;
   border: 2px solid #f9004d;
-  border-radius: 5px;
   margin: 1rem 0;
 }
 .intro button:hover {
   transform: scale(1.1);
   transition: 0.5s;
   border: 2px solid #f9004d;
-}
-.cutout {
-  width: 500px;
-  height: 500px;
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  right: 10%;
-  top: 15%;
-  background-color: #f9004f9a;
-  border-radius: 50%;
 }
 @keyframes jump {
   0%{
@@ -233,13 +224,11 @@ header {
     transform: translateY(0);
   }
 }
-.cutout img {
-  width: 200px;
-}
+
 .header-text {
   font-size: 1rem;
   color: rgba(126, 155, 185, 0.691);
-  width: 30%;
+  width: 50%;
   margin: 2rem 0;
 }
 .intro button a {
@@ -254,7 +243,7 @@ header {
 }
 .social-icons ul {
   list-style: none;
-  font-size: 2rem;
+  font-size: 1.5rem;
   display: flex;
 }
 .social-icons ul li :hover {
@@ -682,7 +671,6 @@ contact section css
 #contact p {
   margin: 2rem 0;
 }
-
 /* all sections css */
 section {
   height: 100vh;
@@ -751,11 +739,8 @@ section:nth-child(odd) {
     transform: scale(0.6);
   }
   .intro button {
-    padding: 0.2rem 0.7rem;
-    font-size: 1.1rem;
-  }
-  .intro button {
     padding: 0.2rem 2rem;
+    transform: scale(0.8);
   }
   #about {
     height: fit-content;
@@ -786,10 +771,8 @@ section:nth-child(odd) {
     width: 100%;
     bottom: 2%;
   }
-  .cutout {
-    top: 0%;
-    left: 0;
-    opacity: 0.4;
+  .social-icons{
+    margin-left: 1.5rem;
   }
   .social-icons ul li {
     font-size: 1.5rem;
@@ -803,6 +786,7 @@ section:nth-child(odd) {
 
   .intro button {
     padding: 1rem 2rem;
+  
   }
   .contact-container {
     width: 100%;
